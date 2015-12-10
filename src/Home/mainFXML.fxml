@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.text.Text?>
+
+<GridPane fx:controller="Home.Controller"
+          alignment="center"
+          hgap="10"
+          vgap="10"
+          xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+
+    <Text text="Reverse it || ti esrevreR"
+            GridPane.rowIndex="0"
+            GridPane.columnSpan="2"
+            GridPane.halignment="CENTER"
+            Style="-fx-font: NORMAL 20 Tahoma;"/>
+
+    <TextField fx:id="originalWord" text="Add Your Text Here"
+            GridPane.rowIndex="2"
+            GridPane.columnIndex="1"
+            Style="-fx-font: NORMAL 14 Tahoma;"/>
+
+    <Button text="Reverse!"
+            onAction="#reverseWord"
+            GridPane.rowIndex="3"
+            GridPane.columnIndex="1"
+            GridPane.halignment="LEFT"/>
+
+    <Text   fx:id="outputText"
+            GridPane.halignment="LEFT"
+            GridPane.rowIndex="5"
+            GridPane.columnIndex="1"
+            Style="-fx-font: NORMAL 20 Tahoma;"/>
+    
+
+</GridPane>
