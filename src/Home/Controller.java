@@ -2,13 +2,12 @@ package Home;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.TextField;
-import javafx.scene.text.Text;
+import javafx.scene.control.TextArea;
 
 public class Controller {
 
-    @FXML private TextField originalWord;
-    @FXML private Text outputText;
+    @FXML private TextArea originalWord;
+    @FXML private TextArea outputText;
 
     public void reverseWord(ActionEvent actionEvent) {
         String forwardWord = originalWord.getText();

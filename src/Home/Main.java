@@ -10,9 +10,9 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("mainFXML.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("updateFXML.fxml"));
         primaryStage.setTitle("Reverse Word");
-        primaryStage.setScene(new Scene(root, 300, 275));
+        primaryStage.setScene(new Scene(root, 600, 500));
         primaryStage.show();
     }
 
